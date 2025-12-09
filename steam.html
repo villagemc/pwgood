@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Оплата</title>
+</head>
+<body class="font-[Golos_Text] bg-(--color-main-full) text-(--color-white-full) min-h-dvh flex flex-col">
+    <img
+        class="absolute top-0 left-0 object-cover object-top w-full pointer-events-none"
+        src="./assets/header-bg.svg"
+        alt="Header background"
+    />
+    <img
+        class="absolute top-0 left-0 pointer-events-none -z-1 max-xl:hidden"
+        src="./assets/header-custom-one.svg"
+        alt="Header Custom Image"
+    />
+    <img
+        class="absolute top-0 right-0 pointer-events-none -z-1 max-xl:hidden"
+        src="./assets/header-custom-two.svg"
+        alt="Header Custom Image"
+    />
+    <!-- Фиксированная шапка странички -->
+    <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
+        <a class="block max-lg:hidden w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+            <img
+                class="w-full"
+                src="./assets/logo-dmc.svg"
+                alt="Logo DMC"
+            />
+        </a>
+        <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+            <div class="flex items-center gap-x-3 max-lg:justify-between">
+                <a class="hidden max-lg:block w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                    <img
+                        class="w-full"
+                        src="./assets/logo-dmc.svg"
+                        alt="Logo DMC"
+                    />
+                </a>
+                <ul class="flex items-center px-[clamp(12px,3.33vw,24px)] gap-x-[clamp(12px,3.33vw,48px)] max-lg:hidden">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                </ul>
+                <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50 max-lg:hidden">
+                    <div class="w-max-10 flex items-center justify-center">
+                        <img
+                            class="w-max-10 aspect-square"
+                            src="./assets/telegram.svg"
+                            alt="Logo Telegram"
+                        />
+                    </div>
+                    <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                </button>
+                <button type="button" class="cursor-pointer transition-opacity duration-300 hover:opacity-50 w-[clamp(18px,5vw,36px)] hidden max-lg:inline-block">
+                    <img
+                        class="w-full"
+                        src="./assets/menu.svg"
+                        alt="Menu DMC"
+                    />
+                </button>
+            </div>
+            <!-- Панель шапки при нажатии на меню -->
+            <!-- <div class="hidden flex-col items-center justify-center gap-y-11 h-[90vh] min-h-[530px] max-lg:flex">
+                <ul class="flex flex-col items-center px-3 gap-y-8">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                    </li>
+                </ul>
+                <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50">
+                    <div class="w-max-10 flex items-center justify-center">
+                        <img
+                            class="w-max-10 aspect-square"
+                            src="./assets/telegram.svg"
+                            alt="Logo Telegram"
+                        />
+                    </div>
+                    <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                </button>
+            </div> -->
+        </div>
+    </header>
+    <!-- Основная часть сайта -->
+    <main class="relative flex flex-col overflow-hidden gap-y-[clamp(28px,7.8vw,52px)] py-[clamp(106px,37.22vw,232px)]">
+        <img
+            class="hidden absolute translate-y-[41%] bottom-0 right-0 max-sm:block pointer-events-none -z-1"
+            src="./assets/main-steam.svg"
+            alt="Decoration Image"
+        />
+        <!-- Секция с продажей steam -->
+        <section class="px-[clamp(20px,5.55vw,100px)]">
+            <div class="grid grid-cols-[0.4fr_0.6fr] gap-y-[clamp(28px,7.8vw,52px)] mx-auto max-w-7xl w-full gap-5 max-xl:grid-cols-1">
+                <!-- Описание формы оплаты -->
+                <div class="flex flex-col gap-y-[clamp(20px,5.5vw,40px)] bg-(--color-footer-four) backdrop-blur-3xl py-[clamp(28px,7.8vw,40px)] px-[clamp(20px,5.5vw,40px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) max-xl:p-0 max-xl:bg-transparent max-xl:border-0">
+                    <div class="w-full aspect-square flex items-center justify-center bg-[url(./assets/avatar.png)] bg-cover bg-no-repeat bg-center rounded-[inherit] max-h-102">
+                        <img
+                            class="w-full max-w-[clamp(215px,58vw,300px)] aspect-square"
+                            src="./assets/box.png"
+                            alt="Image Box"
+                        />
+                    </div>
+                    <div class="my-auto flex flex-col gap-y-[clamp(12px,3.3vw,20px)] max-xl:items-center max-xl:px-2">
+                        <h4 class="font-medium text-[clamp(17px,4.7vw,24px)] max-xl:text-center">Steam пополнение</h4>
+                        <span class="text-(--color-white-seven) text-[clamp(12px,3.3vw,18px)] text-pretty max-xl:text-center max-xl:max-w-130">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры</span>
+                    </div>
+                </div>
+                <!-- Форма оплаты -->
+                <form class="flex flex-col bg-(--color-footer-four) backdrop-blur-3xl py-[clamp(28px,7.8vw,40px)] px-[clamp(20px,5.5vw,40px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full)">
+                    <h3 class="font-medium text-[clamp(20px,5.5vw,32px)]">Оплата</h3>
+                    <legend class="pt-[clamp(32px,8.8vw,40px)] flex flex-col gap-y-[clamp(20px,5.5vw,40px)]">
+                        <fieldset class="flex flex-col gap-y-[clamp(10px,3vw,14px)]">
+                            <label for="login" class="text-(12px,3vw,16px)">Атрибут товара</label>
+                            <input
+                                id="login"
+                                type="text"
+                                name="login"
+                                autocomplete="name"
+                                placeholder="Логин Steam"
+                                class="text-[clamp(12px,3vw,20px)] p-[clamp(14px,3.8vw,20px)] rounded-[clamp(12px,3vw,20px)] border border-(--color-white-two) bg-(--color-input-four) outline-0"
+                            />
+                        </fieldset>
+                        <fieldset class="flex flex-col gap-y-[clamp(10px,3vw,14px)]">
+                            <input
+                                type="text"
+                                name="promocode"
+                                autocomplete="off"
+                                placeholder="Промокод"
+                                class="text-[clamp(12px,3vw,20px)] p-[clamp(14px,3.8vw,20px)] rounded-[clamp(12px,3vw,20px)] border border-(--color-white-two) bg-(--color-input-four) outline-0"
+                            />
+                        </fieldset>
+                        <fieldset class="flex flex-col gap-y-[clamp(10px,3vw,14px)]">
+                            <label for="email" class="text-(12px,3vw,16px)">Email для чека</label>
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                autocomplete="email"
+                                class="text-[clamp(12px,3vw,20px)] p-[clamp(14px,3.8vw,20px)] rounded-[clamp(12px,3vw,20px)] border border-(--color-white-two) bg-(--color-input-four) outline-0"
+                            />
+                        </fieldset>
+                    </legend>
+                    <div class="mt-auto pt-[clamp(28px,7.7vw,32px)] flex flex-col gap-y-[clamp(20px,5.5vw,28px)]">
+                        <div class="flex items-center gap-x-3.5">
+                            <input
+                                id="checkbox"
+                                type="checkbox"
+                                name="is-check"
+                                class="appearance-none text-(--color-red-full) border border-(--color-red-full) rounded-lg w-5 aspect-square flex items-center justify-center checked:before:absolute checked:before:content-['✔'] transition-opacity duration-300 hover:opacity-50 cursor-pointer"
+                            />
+                            <p class="text-[clamp(12px,3vw,18px)]">
+                                <label for="checkbox" class="transition-opacity duration-300 hover:opacity-50 cursor-pointer">Я согласен с условиями</label>
+                                <a href="/" class="text-(--color-red-full) underline transition-opacity duration-300 hover:opacity-50 cursor-pointer">оферты</a>
+                            </p>
+                        </div>
+                        <button type="submit" class="p-[clamp(12px,3vw,20px)] w-full rounded-[clamp(12px,3vw,17px)] cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex justify-center transition-opacity duration-300 hover:opacity-50">
+                            <span class="text-[clamp(12px,3.3vw,18px)] font-medium">Оплатить 150000 ₽ </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Конечный контент сайта -->
+    <footer class="mt-auto flex flex-col px-[clamp(20px,5.55vw,100px)] py-[clamp(38px,10.5vw,70px)] backdrop-blur-3xl bg-(--color-footer-two) border-t border-(--color-card-one)">
+        <div class="flex flex-col gap-y-[clamp(32px,8.9vw,44px)] mx-auto max-w-7xl w-full">
+            <div class="flex justify-between items-center gap-11 max-lg:flex-col max-sm:items-start">
+                <a class="block w-[clamp(98px,27.2vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                    <img
+                        class="w-full"
+                        src="./assets/logo-dmc.svg"
+                        alt="Logo DMC"
+                    />
+                </a>
+                <ul class="flex items-center gap-[clamp(24px,6.7vw,52px)] max-lg:flex-wrap max-lg:justify-center max-sm:flex-col max-sm:items-start">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-(--color-white-two) w-full h-px"></div>
+            <p class="text-(--color-white-five) text-[clamp(12px,3.33vw,16px)]">© 2023 — 2025 DMC Store. Все права защищены. Любое копирование материалов сайта запрещено. Все упомянутые названия игр, продуктов, компаний, торговых марок, логотипы и другие элементы принадлежат их законным владельцам.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('./font/stylesheet.css');
+
+@import "tailwindcss";
+
+html { scroll-behavior: smooth }
+
+:root {
+    --size-8xl: 1360px;
+    --size-9xl: 1440px;
+    --size-10xl: 1520px;
+    --size-11xl: 1600px;
+
+    --color-white: 255, 255, 255;
+    --color-white-full: rgba(var(--color-white), 1);
+    --color-white-one: rgba(var(--color-white), 0.1);
+    --color-white-one-one: rgba(var(--color-white), 0.01);
+    --color-white-one-eight: rgba(var(--color-white), 0.08);
+    --color-white-two: rgba(var(--color-white), 0.2);
+    --color-white-four: rgba(var(--color-white), 0.4);
+    --color-white-five: rgba(var(--color-white), 0.5);
+    --color-white-seven: rgba(var(--color-white), 0.7);
+    --color-white-nine: rgba(var(--color-white), 0.9);
+
+    --color-logo: 22, 22, 22;
+    --color-logo-seven: rgba(var(--color-logo), 0.8);
+
+    --color-black: 0, 0, 0;
+    --color-black-full: rgba(var(--color-black), 1);
+
+    --color-main: 14, 13, 13;
+    --color-main-full: rgba(var(--color-main), 1);
+
+    --color-card: 51, 50, 50;
+    --color-card-full: rgba(var(--color-card), 1);
+    --color-card-one: rgba(var(--color-card), 0.1);
+
+    --color-header: 22, 22, 22;
+    --color-header-eight: rgba(var(--color-header), 0.8);
+
+    --color-input: 25, 24, 24;
+    --color-input-four: rgba(var(--color-input), 0.4);
+    --color-input-eight: rgba(var(--color-input), 0.8);
+
+    --color-footer: 27, 26, 26;
+    --color-footer-full: rgba(var(--color-footer), 1);
+    --color-footer-two: rgba(var(--color-footer), 0.2);
+    --color-footer-four: rgba(var(--color-footer), 0.4);
+
+    --color-price: 182, 182, 182;
+    --color-price-full: rgba(var(--color-price), 1);
+
+    --color-gains: 155, 155, 155;
+    --color-gains-full: rgba(var(--color-gains), 1);
+
+    --color-red: 255, 41, 59;
+    --color-red-full: rgba(var(--color-red), 1);
+    --color-red-one: rgba(var(--color-red), 0.1);
+    --color-red-five: rgba(var(--color-red), 0.5);
+
+    --color-place: 203, 203, 203;
+    --color-place-full: rgba(var(--color-place), 1);
+
+    --color-grey: 127, 127, 127;
+    --color-grey-full: rgba(var(--color-grey), 1);
+
+    --color-border: 113, 113, 122;
+    --color-border-full: rgba(var(--color-border), 1);
+    --color-border-two: rgba(var(--color-border), 0.2);
+
+    --color-sub: 165, 165, 165;
+    --color-sub-full: rgba(var(--color-sub), 1);
+
+    --color-purple: 170, 0, 255;
+    --color-purple-full: rgba(var(--color-purple), 1);
+
+    --color-yellow: 252, 179, 12;
+    --color-yellow-full: rgba(var(--color-yellow), 1);
+    --color-yellow-five: rgba(var(--color-yellow), 0.5);
+
+    --color-bg-red-gradient-button:
+        123deg,
+        rgb(255, 41, 59) -19.43%,
+        rgb(255, 41, 59) 50.01%,
+        rgb(255, 56, 73) 50.03%,
+        rgb(245, 50, 66) 74.27%,
+        rgb(255, 49, 66) 74.29%,
+        rgb(255, 41, 59) 119.46%
+    ;
+
+    --color-bg-black-gradient-reviews: 
+        270deg,
+        rgba(14, 13, 13, 0.74) 0%,
+        rgba(14, 13, 13, 0.00) 100%
+    ;
+
+    --color-bg-product-gradient:
+        275deg,
+        rgba(102, 102, 102, 0.11) 10.61%,
+        rgba(0, 0, 0, 0.00) 68.51%
+    ;
+
+    --color-bg-chat-gradient:
+        180deg,
+        rgba(27, 26, 26, 0.85) 0%,
+        rgba(27, 26, 26, 0.85) 100%
+    ;
+
+    --color-bg-chat-gradient-linear:
+        270deg,
+        rgba(113, 113, 122, 0.00) 0%,
+        rgba(113, 113, 122, 0.25) 50%,
+        rgba(113, 113, 122, 0.00) 100%
+    ;
+}

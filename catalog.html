@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Продукты</title>
+</head>
+<body class="font-[Golos_Text] bg-(--color-main-full) text-(--color-white-full) min-h-dvh flex flex-col">
+    <img
+        class="absolute top-0 left-0 object-cover object-top w-full pointer-events-none"
+        src="./assets/header-bg.svg"
+        alt="Header background"
+    />
+    <img
+        class="absolute top-0 left-0 pointer-events-none -z-1 max-xl:hidden"
+        src="./assets/header-custom-one.svg"
+        alt="Header Custom Image"
+    />
+    <img
+        class="absolute top-0 right-0 pointer-events-none -z-1 max-xl:hidden"
+        src="./assets/header-custom-two.svg"
+        alt="Header Custom Image"
+    />
+    <!-- Фиксированная шапка странички -->
+    <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
+        <a class="block max-lg:hidden w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+            <img
+                class="w-full"
+                src="./assets/logo-dmc.svg"
+                alt="Logo DMC"
+            />
+        </a>
+        <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+            <div class="flex items-center gap-x-3 max-lg:justify-between">
+                <a class="hidden max-lg:block w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                    <img
+                        class="w-full"
+                        src="./assets/logo-dmc.svg"
+                        alt="Logo DMC"
+                    />
+                </a>
+                <ul class="flex items-center px-[clamp(12px,3.33vw,24px)] gap-x-[clamp(12px,3.33vw,48px)] max-lg:hidden">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                </ul>
+                <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50 max-lg:hidden">
+                    <div class="w-max-10 flex items-center justify-center">
+                        <img
+                            class="w-max-10 aspect-square"
+                            src="./assets/telegram.svg"
+                            alt="Logo Telegram"
+                        />
+                    </div>
+                    <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                </button>
+                <button type="button" class="cursor-pointer transition-opacity duration-300 hover:opacity-50 w-[clamp(18px,5vw,36px)] hidden max-lg:inline-block">
+                    <img
+                        class="w-full"
+                        src="./assets/menu.svg"
+                        alt="Menu DMC"
+                    />
+                </button>
+            </div>
+            <!-- Панель шапки при нажатии на меню -->
+            <!-- <div class="hidden flex-col items-center justify-center gap-y-11 h-[90vh] min-h-[530px] max-lg:flex">
+                <ul class="flex flex-col items-center px-3 gap-y-8">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                    </li>
+                </ul>
+                <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50">
+                    <div class="w-max-10 flex items-center justify-center">
+                        <img
+                            class="w-max-10 aspect-square"
+                            src="./assets/telegram.svg"
+                            alt="Logo Telegram"
+                        />
+                    </div>
+                    <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                </button>
+            </div> -->
+        </div>
+    </header>
+    <!-- Основная часть сайта -->
+    <main class="relative flex flex-col gap-y-[clamp(28px,7.8vw,52px)] py-[clamp(106px,37.22vw,232px)] overflow-hidden">
+        <img
+            class="hidden absolute -bottom-11 left-0 pointer-events-none -z-1 max-sm:block"
+            src="./assets/main-custom.svg"
+            alt="Main Custom Image"
+        />
+        <!-- Секция с описанием MineCraft -->
+         <section class="px-[clamp(20px,5.55vw,100px)]">
+            <div class="mx-auto max-w-7xl w-full">
+                <div class="flex items-center gap-x-[clamp(12px,3.33vw,32px)]">
+                    <img
+                        class="rounded-[clamp(12px,3.33vw,34px)] w-[clamp(62px,17.22vw,197px)]"
+                        src="./assets/minecraft.png"
+                        alt="Image minecraft"
+                    />
+                    <div class="flex flex-col gap-y-[clamp(12px,3.33vw,20px)]">
+                        <h3 class="font-medium text-[clamp(15px,3.5vw,48px)]">Minecraft Java & Bedrock Edition</h3>
+                        <p class="text-(--color-white-seven) text-[clamp(8px,2.22vw,18px)] max-w-151">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с товарами -->
+        <section class="px-[clamp(20px,5.55vw,100px)]">
+            <div class="flex flex-col gap-y-[clamp(28px,7.8vw,52px)] mx-auto max-w-7xl w-full">
+                <!-- Поисковик по товарам -->
+                <div class="relative w-full">
+                    <input
+                        type="text"
+                        id="search"
+                        name="search"
+                        class="peer outline-0 backdrop-blur-2xl text-center border px-[clamp(8px,2.22vw,20px)] text-[clamp(12px,3vw,20px)] min-h-[clamp(36px,10vw,72px)] border-(--color-white-two) bg-(--color-input-four) rounded-[clamp(8px,2.22vw,20px)] w-full"
+                    />
+                    <label for="search" class="flex items-center gap-x-[clamp(10px,2.9vw,20px)] absolute top-1/2 left-1/2 -translate-1/2 peer-focus:hidden peer-placeholder-shown:hidden">
+                        <img
+                            class="w-[clamp(10px,2.9vw,20px)] aspect-square"
+                            src="./assets/search.svg"
+                            alt="Icon search"
+                        />
+                        <span class="text-(--color-white-four) text-[clamp(12px,3vw,20px)]">Найдем все</span>
+                    </label>
+                </div>
+                <!-- Список товаров -->
+                <ul class="grid grid-cols-4 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-x-[clamp(14px,3.9vw,20px)] gap-y-[clamp(18px,5vw,30px)] justify-center">
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li tabindex="0" role="button" class="p-2 rounded-[clamp(8px,2.22vw,16px)] backdrop-blur-3xl bg-(--color-card-one) border border-(--color-white-one) cursor-pointer transition duration-300 hover:opacity-85 hover:scale-103">
+                        <div class="bg-[url(./assets/card.jpg)] w-full min-h-[clamp(100px,27.8vw,200px)] bg-no-repeat bg-cover rounded-[inherit] flex items-center justify-center">
+                            <img
+                                class="max-h-[clamp(100px,27.8vw,200px)] rounded-[inherit]"
+                                src="./assets/key.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="px-[clamp(4px,1.11vw,8px)] py-[clamp(8px,2.22vw,20px)] flex flex-col gap-y-[clamp(4px,1.11vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Конечный контент сайта -->
+    <footer class="mt-auto flex flex-col px-[clamp(20px,5.55vw,100px)] py-[clamp(38px,10.5vw,70px)] backdrop-blur-3xl bg-(--color-footer-two) border-t border-(--color-card-one)">
+        <div class="flex flex-col gap-y-[clamp(32px,8.9vw,44px)] mx-auto max-w-7xl w-full">
+            <div class="flex justify-between items-center gap-11 max-lg:flex-col max-sm:items-start">
+                <a class="block w-[clamp(98px,27.2vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                    <img
+                        class="w-full"
+                        src="./assets/logo-dmc.svg"
+                        alt="Logo DMC"
+                    />
+                </a>
+                <ul class="flex items-center gap-[clamp(24px,6.7vw,52px)] max-lg:flex-wrap max-lg:justify-center max-sm:flex-col max-sm:items-start">
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-(--color-white-two) w-full h-px"></div>
+            <p class="text-(--color-white-five) text-[clamp(12px,3.33vw,16px)]">© 2023 — 2025 DMC Store. Все права защищены. Любое копирование материалов сайта запрещено. Все упомянутые названия игр, продуктов, компаний, торговых марок, логотипы и другие элементы принадлежат их законным владельцам.</p>
+        </div>
+    </footer>
+</body>
+</html>

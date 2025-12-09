@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Правила оферты</title>
+</head>
+<body class="font-[Golos_Text] relative bg-(--color-main-full) text-(--color-white-full) min-h-dvh">
+    <div class="relative overflow-hidden flex flex-col z-0">
+        <img
+            class="absolute top-0 left-0 object-cover object-top w-full pointer-events-none"
+            src="./assets/header-bg.svg"
+            alt="Header background"
+        />
+        <img
+            class="absolute top-0 left-0 pointer-events-none -z-1 max-xl:hidden"
+            src="./assets/rules-one.svg"
+            alt="Header Custom Image"
+        />
+        <img
+            class="absolute top-325 left-0 pointer-events-none -z-1 max-xl:hidden"
+            src="./assets/rules-two.svg"
+            alt="Header Custom Image"
+        />
+        <img
+            class="absolute bottom-325 left-0 pointer-events-none -z-1 max-xl:hidden"
+            src="./assets/rules-three.svg"
+            alt="Header Custom Image"
+        />
+        <img
+            class="absolute bottom-0 left-0 pointer-events-none -z-1 max-xl:hidden"
+            src="./assets/rules-four.svg"
+            alt="Header Custom Image"
+        />
+        <!-- Фиксированная шапка странички -->
+        <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
+            <a class="block max-lg:hidden w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                <img
+                    class="w-full"
+                    src="./assets/logo-dmc.svg"
+                    alt="Logo DMC"
+                />
+            </a>
+            <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+                <div class="flex items-center gap-x-3 max-lg:justify-between">
+                    <a class="hidden max-lg:block w-[clamp(65px,18vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                        <img
+                            class="w-full"
+                            src="./assets/logo-dmc.svg"
+                            alt="Logo DMC"
+                        />
+                    </a>
+                    <ul class="flex items-center px-[clamp(12px,3.33vw,24px)] gap-x-[clamp(12px,3.33vw,48px)] max-lg:hidden">
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50 max-lg:hidden">
+                        <div class="w-max-10 flex items-center justify-center">
+                            <img
+                                class="w-max-10 aspect-square"
+                                src="./assets/telegram.svg"
+                                alt="Logo Telegram"
+                            />
+                        </div>
+                        <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                    </button>
+                    <button type="button" class="cursor-pointer transition-opacity duration-300 hover:opacity-50 w-[clamp(18px,5vw,36px)] hidden max-lg:inline-block">
+                        <img
+                            class="w-full"
+                            src="./assets/menu.svg"
+                            alt="Menu DMC"
+                        />
+                    </button>
+                </div>
+                <!-- Панель шапки при нажатии на меню -->
+                <!-- <div class="hidden flex-col items-center justify-center gap-y-11 h-[90vh] min-h-[530px] max-lg:flex">
+                    <ul class="flex flex-col items-center px-3 gap-y-8">
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="p-4 rounded-2xl cursor-pointer bg-[linear-gradient(var(--color-bg-red-gradient-button))] flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50">
+                        <div class="w-max-10 flex items-center justify-center">
+                            <img
+                                class="w-max-10 aspect-square"
+                                src="./assets/telegram.svg"
+                                alt="Logo Telegram"
+                            />
+                        </div>
+                        <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                    </button>
+                </div> -->
+            </div>
+        </header>
+        <!-- Основная часть сайта -->
+        <main class="relative flex flex-col overflow-hidden gap-y-[clamp(150px,41.6vw,256px)] py-[clamp(106px,37.22vw,232px)]">
+            <img
+                class="absolute -z-1 bottom-0 translate-y-1/3 left-0 pointer-events-none hidden max-sm:block"
+                src="./assets/rules-main.svg"
+                alt="Image Custom"
+            />
+            <!-- Секция с правилами -->
+            <section class="flex justify-between">
+                <div class="w-65 shrink-0 max-2xl:hidden"></div>
+                <div class="px-[clamp(20px,5.55vw,100px)]">
+                    <div class="mx-auto max-w-7xl w-full flex flex-col gap-y-[clamp(32px,8.8vw,52px)]">
+                        <div class="flex flex-col">
+                            <h2 class="font-medium text-[clamp(24px,6.6vw,62px)]">Публичная оферта</h2>
+                            <p class="font-medium text-[clamp(12px,3vw,20px)] text-(--color-grey-full)">Последнее редактирование: August 11, 2025</p>
+                        </div>
+                        <h3 class="text-[clamp(16px,4.4vw,32px)]">О заключении договора купли-продажи</h3>
+                        <pre class="whitespace-pre-line font-[inherit] text-[clamp(12px,3vw,18px)] text-(--color-white-seven)">
+                            <span id="one">1. Общие положения</span>
+
+                            В настоящей Публичной оферте содержатся условия заключения Договора купли-продажи (далее по тексту - «Договор купли-продажи» и/или «Договор»). Настоящей офертой признается предложение, адресованное одному или нескольким конкретным лицам, которое достаточно определенно и выражает намерение лица, сделавшего предложение, считать себя заключившим Договор с адресатом, которым будет принято предложение.
+
+                            Совершение указанных в настоящей Оферте действий является подтверждением согласия обеих Сторон заключить Договор купли-продажи на условиях, в порядке и объеме, изложенных в настоящей Оферте.
+                            Нижеизложенный текст Публичной оферты является официальным публичным предложением Продавца, адресованный заинтересованному кругу лиц заключить Договор купли-продажи в соответствии с положениями пункта 2 статьи 437 Гражданского кодекса РФ.
+
+                            Договор купли-продажи считается заключенным и приобретает силу с момента совершения Сторонами действий, предусмотренных в настоящей Оферте, и, означающих безоговорочное, а также полное принятие всех условий настоящей Оферты без каких-либо изъятий или ограничений на условиях присоединения.
+
+                            Термины и определения:
+
+                            Договор – текст настоящей Оферты с Приложениями, являющимися неотъемлемой частью настоящей Оферты, акцептованный Покупателем путем совершения конклюдентных действий, предусмотренных настоящей Офертой.
+
+                            Конклюдентные действия — это поведение, которое выражает согласие с предложением контрагента заключить, изменить или расторгнуть договор. Действия состоят в полном или частичном выполнении условий, которые предложил контрагент.
+
+                            Сайт Продавца в сети «Интернет» – совокупность программ для электронных вычислительных машин и иной информации, содержащейся в информационной системе, доступ к которой обеспечивается посредством сети «Интернет» по доменному имени и сетевому адресу: https://t.me/pwgoodstorebot
+
+                            Стороны Договора (Стороны) – Продавец и Покупатель.
+
+                            Товар - товаром по договору купли-продажи могут быть любые вещи с соблюдением правил, предусмотренных статьей 129 Гражданского кодекса РФ.
+
+                            <span id="two">2. Предмет Договора</span>
+
+                            2.1. По настоящему Договору Продавец обязуется передать вещь (Товар) в собственность Покупателя, а Покупатель обязуется принять Товар и уплатить за него определенную денежную сумму.
+
+                            2.2. Наименование, количество, а также ассортимент Товара, его стоимость, порядок доставки и иные условия определяются на основании сведений Продавца при оформлении заявки Покупателем, либо устанавливаются на сайте Продавца в сети «Интернет» https://t.me/pwgoodstorebot
+
+                            2.3. Акцепт настоящей Оферты выражается в совершении конклюдентных действий, в частности:
+                            • действиях, связанных с регистрацией учетной записи на Сайте Продавца в сети «Интернет» при наличии необходимости регистрации учетной записи;
+                            • путем составления и заполнения заявки на оформление заказа Товара;
+                            • путем сообщения требуемых для заключения Договора сведений по телефону, электронной почте, указанными на сайте Продавца в сети «Интернет», в том числе, при обратном звонке Продавца по заявке Покупателя;
+                            • оплаты Товара Покупателем.
+                            • Данный перечень не является исчерпывающим, могут быть и другие действия, которые ясно выражают намерение лица принять предложение контрагента.
+
+                            <span id="three">3. Права и обязанности Сторон</span>
+
+                            3.1. Права и обязанности Продавца:
+
+                            3.1.1. Продавец вправе требовать оплаты Товаров и их доставки в порядке и на условиях, предусмотренных Договором;
+
+                            3.1.2. Отказать в заключении Договора на основании настоящей Оферты Покупателю в случае его недобросовестного поведения, в частности, в случае:
+                            • более 2 (Двух) отказов от Товаров надлежащего качества в течение года;
+                            • предоставления заведомо недостоверной персональной информации;
+                            • возврата испорченного Покупателем Товара или Товара, бывшего в употреблении;
+                            • иных случаях недобросовестного поведения, свидетельствующих о заключении Покупателем Договора с целью злоупотребления правами, и отсутствии обычной экономической цели Договора — приобретения Товара.
+
+                            3.1.3. Продавец обязуется передать Покупателю Товар надлежащего качества и в надлежащей упаковке;
+
+                            3.1.4. Передать Товар свободным от прав третьих лиц;
+
+                            3.1.5. Организовать доставку Товаров Покупателю;
+
+                            3.1.6. Предоставить Покупателю всю необходимую информацию в соответствии с требованиями действующего законодательства РФ и настоящей Оферты;
+
+                            3.2. Права и обязанности Покупателя:
+
+                            3.2.1. Покупатель вправе требовать передачи Товара в порядке и на условиях, предусмотренным Договором.
+
+                            3.2.2. Требовать предоставления всей необходимой информации в соответствии с требованиями действующего законодательства РФ и настоящей Оферты;
+
+                            3.2.3. Отказаться от Товара по основаниям, предусмотренным Договором и действующим законодательством Российской Федерации.
+
+                            3.2.4. Покупатель обязуется предоставить Продавцу достоверную информацию, необходимую для надлежащего исполнения Договора;
+
+                            3.2.5. Принять и оплатить Товар в соответствии с условиями Договора;
+
+                            3.2.6. Покупатель гарантирует, что все условия Договора ему понятны; Покупатель принимает условия без оговорок, а также в полном объеме.
+
+                            <span id="four">4. Цена и порядок расчетов</span>
+
+                            4.1. Стоимость, а также порядок оплаты Товара определяется на основании сведений Продавца при оформлении заявки Покупателем, либо устанавливаются на сайте Продавца в сети «Интернет»: https://t.me/pwgoodstorebot
+
+                            4.2. Все расчеты по Договору производятся в безналичном порядке.
+
+                            <span id="five">5. Обмен и возврат Товара</span>
+
+                            5.1 Покупатель вправе осуществить возврат (обмен) Продавцу Товара, приобретенный дистанционным способом, за исключением перечня товаров, не подлежащих обмену и возврату согласно действующему законодательству Российской Федерации. Условия, сроки и порядок возврата Товара надлежащего и ненадлежащего качества установлены в соответствии с требованиями Гражданского кодекса РФ, Закона РФ от 07.02.1992 N 2300-1 «О защите прав потребителей»; Правил, утвержденных Постановлением Правительства РФ от 31.12.2020 N 2463. 
+
+                            5.2 Требование Покупателя об обмене либо о возврате Товара подлежит удовлетворению, если Товар не был в употреблении, сохранены его потребительские свойства и имеются доказательства приобретения его у Продавца. 
+
+                            <span id="six">6. Конфиденциальность и безопасность</span>
+
+                            6.1. При реализации настоящего Договора Стороны обеспечивают конфиденциальность и безопасность персональных данных в соответствии с актуальной редакцией ФЗ от 27.07.2006 г. № 152-ФЗ «О персональных данных» и ФЗ от 27.07.2006 г. № 149-ФЗ «Об информации, информационных технологиях и о защите информации».
+
+                            6.2. Стороны обязуются сохранять конфиденциальность информации, полученной в ходе исполнения настоящего Договора, и принять все возможные меры, чтобы предохранить полученную информацию от разглашения.
+
+                            6.3. Под конфиденциальной информацией понимается любая информация, передаваемая Продавцом и Покупателем в процессе реализации Договора и подлежащая защите, исключения указаны ниже.
+
+                            6.4. Такая информация может содержаться в предоставляемых Продавцом локальных нормативных актах, договорах, письмах, отчетах, аналитических материалах, результатах исследований, схемах, графиках, спецификациях и других документах, оформленных как на бумажных, так и на электронных носителях.
+
+                            <span id="seven">7. Форс-мажор</span>
+
+                            7.1. Стороны освобождаются от ответственности за неисполнение или ненадлежащее исполнение обязательств по Договору, если надлежащее исполнение оказалось невозможным вследствие непреодолимой силы, то есть чрезвычайных и непредотвратимых при данных условиях обстоятельств, под которыми понимаются: запретные действия властей, эпидемии, блокада, эмбарго, землетрясения, наводнения, пожары или другие стихийные бедствия. 
+
+                            7.2. В случае наступления этих обстоятельств Сторона обязана в течение 30 (Тридцати) рабочих дней уведомить об этом другую Сторону. 
+
+                            7.3. Документ, выданный уполномоченным государственным органом, является достаточным подтверждением наличия и продолжительности действия непреодолимой силы. 
+
+                            7.4. Если обстоятельства непреодолимой силы продолжают действовать более 60 (Шестидесяти) рабочих дней, то каждая Сторона вправе отказаться от настоящего Договора в одностороннем порядке. 
+
+                            <span id="eight">8. Ответственность Сторон</span>
+
+                            8.1. В случае неисполнения и/или ненадлежащего исполнения своих обязательств по Договору, Стороны несут ответственность в соответствии с условиями настоящей Оферты.
+
+                            8.2. Сторона, не исполнившая или ненадлежащим образом исполнившая обязательства по Договору, обязана возместить другой Стороне причиненные такими нарушениями убытки.
+
+                            <span id="nine">9. Срок действия настоящей Оферты</span>
+
+                            9.1. Оферта вступает в силу с момента размещения на Сайте Продавца и действует до момента её отзыва Продавцом.
+
+                            9.2. Продавец оставляет за собой право внести изменения в условия Оферты и/или отозвать Оферту в любой момент по своему усмотрению. Сведения об изменении или отзыве Оферты доводятся до Покупателя по выбору Продавца посредством размещения на сайте Продавца в сети «Интернет», в Личном кабинете Покупателя, либо путем направления соответствующего уведомления на электронный или почтовый адрес, указанный Покупателем при заключении Договора или в ходе его исполнения.
+
+                            9.3. Договор вступает в силу с момента Акцепта условий настоящей Оферты Покупателем и действует до полного исполнения Сторонами обязательств по Договору.
+
+                            9.4. Изменения, внесенные Продавцом в Договор и опубликованные на сайте в форме актуализированной Оферты, считаются принятыми Покупателем в полном объеме.
+
+                            <span id="ten">10. Дополнительные условия</span>
+
+                            10.1. Договор, его заключение и исполнение регулируется действующим законодательством Российской Федерации. Все вопросы, не урегулированные настоящей Офертой или урегулированные не полностью, регулируются в соответствии с материальным правом Российской Федерации.
+
+                            10.2. В случае возникновения спора, который может возникнуть между Сторонами в ходе исполнения ими своих обязательств по Договору, заключенному на условиях настоящей Оферты, Стороны обязаны урегулировать спор мирным путем до начала судебного разбирательства. 
+                            Судебное разбирательство осуществляется в соответствии с законодательством Российской Федерации. 
+                            Споры или разногласия, по которым Стороны не достигли договоренности, подлежат разрешению в соответствии с законодательством РФ. Досудебный порядок урегулирования спора является обязательным.
+
+                            10.3. В качестве языка Договора, заключаемого на условиях настоящей Оферты, а также языка, используемого при любом взаимодействии Сторон (включая ведение переписки, предоставление требований / уведомлений / разъяснений, предоставление документов и т. д.), Стороны определили русский язык.
+
+                            10.4. Все документы, подлежащие предоставлению в соответствии с условиями настоящей Оферты, должны быть составлены на русском языке либо иметь перевод на русский язык, удостоверенный в установленном порядке.
+
+                            10.5. Бездействие одной из Сторон в случае нарушения условий настоящей Оферты не лишает права заинтересованной Стороны осуществлять защиту своих интересов позднее, а также не означает отказа от своих прав в случае совершения одной из Сторон подобных либо сходных нарушений в будущем.
+
+                            10.6. Если на Сайте Продавца в сети «Интернет» есть ссылки на другие веб-сайты и материалы третьих лиц, такие ссылки размещены исключительно в целях информирования, и Продавец не имеет контроля в отношении содержания таких сайтов или материалов. Продавец не несет ответственность за любые убытки или ущерб, которые могут возникнуть в результате использования таких ссылок.
+                        </pre>
+                        <h3 id="pay" class="text-[clamp(16px,4.4vw,32px)]">Реквизиты Продавца</h3>
+                        <pre class="whitespace-pre-line font-[inherit] text-[clamp(12px,3vw,18px)] text-(--color-white-seven)">
+                            Полное наименование: Бакиров Равиль Шамилович
+                            ИНН: 503301436336
+                            ОГРН/ОГРНИП: 324774600142701
+                            Контактный телефон: +7(985)723-58-37
+                            Контактный e-mail: mx.team@mail.ru
+                        </pre>
+                    </div>
+                </div>
+                <nav class="pr-11 flex flex-col z-20 w-65 shrink-0 max-2xl:hidden">
+                    <a href="#one" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Общие положения</a>
+                    <a href="#two" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Предмет Договора</a>
+                    <a href="#three" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Права и обязанности Сторон</a>
+                    <a href="#four" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Цена и порядок расчетов</a>
+                    <a href="#five" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Обмен и возврат Товара</a>
+                    <a href="#six" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Конфиденциальность и безопасность</a>
+                    <a href="#seven" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Форс-мажор</a>
+                    <a href="#eight" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Ответственность Сторон</a>
+                    <a href="#nine" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Срок действия настоящей Оферты</a>
+                    <a href="#ten" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Дополнительные условия</a>
+                    <a href="#pay" class="pr-3 text-base text-right text-(--color-border-full) cursor-pointer py-1 border-r border-(--color-border-full) transition duration-300 hover:text-(--color-white-full) hover:border-(--color-white-full)">Реквизиты Продавца</a>
+                </nav>
+            </section>
+        </main>
+        <!-- Конечный контент сайта -->
+        <footer class="mt-auto flex flex-col px-[clamp(20px,5.55vw,100px)] py-[clamp(38px,10.5vw,70px)] backdrop-blur-3xl bg-(--color-footer-two) border-t border-(--color-card-one)">
+            <div class="flex flex-col gap-y-[clamp(32px,8.9vw,44px)] mx-auto max-w-7xl w-full">
+                <div class="flex justify-between items-center gap-11 max-lg:flex-col max-sm:items-start">
+                    <a class="block w-[clamp(98px,27.2vw,140px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                        <img
+                            class="w-full"
+                            src="./assets/logo-dmc.svg"
+                            alt="Logo DMC"
+                        />
+                    </a>
+                    <ul class="flex items-center gap-[clamp(24px,6.7vw,52px)] max-lg:flex-wrap max-lg:justify-center max-sm:flex-col max-sm:items-start">
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-(--color-white-two) w-full h-px"></div>
+                <p class="text-(--color-white-five) text-[clamp(12px,3.33vw,16px)]">© 2023 — 2025 DMC Store. Все права защищены. Любое копирование материалов сайта запрещено. Все упомянутые названия игр, продуктов, компаний, торговых марок, логотипы и другие элементы принадлежат их законным владельцам.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

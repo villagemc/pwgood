@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Правила оферты</title>
+</head>
+<body class="font-[Golos_Text] relative bg-(--color-main-full) text-(--color-white-full)">
+    <div class="relative overflow-hidden flex flex-col z-0 min-h-dvh">
+        <img
+            class="max-w-[109%] absolute top-0 left-0 pointer-events-none -z-1 max-xl:translate-y-1/3"
+            src="./assets/back-v-one.png"
+            alt="Custom Decoration Image"
+        />
+        <img
+            class="max-w-[109%] absolute top-0 right-0 pointer-events-none -z-1 max-xl:translate-y-1/3"
+            src="./assets/back-v-two.png"
+            alt="Custom Decoration Image"
+        />
+        <img
+            class="max-w-[109%] absolute top-1/2 left-0 pointer-events-none -z-1 -translate-y-[70%] max-xl:-translate-y-1/2"
+            src="./assets/back-v-three.png"
+            alt="Custom Decoration Image"
+        />
+        <img
+            class="max-w-[109%] absolute top-1/2 right-0 pointer-events-none -z-1 -translate-y-1/2 max-xl:translate-y-1/3"
+            src="./assets/back-v-four.png"
+            alt="Custom Decoration Image"
+        />
+        <img
+            class="max-w-[109%] absolute bottom-0 left-0 pointer-events-none -z-1 max-xl:bottom-[20%]"
+            src="./assets/back-v-five.png"
+            alt="Custom Decoration Image"
+        />
+        <img
+            class="max-w-[109%] absolute bottom-0 right-0 pointer-events-none -z-1 max-xl:translate-y-1/3"
+            src="./assets/back-v-six.png"
+            alt="Custom Decoration Image"
+        />
+        <!-- Фиксированная шапка странички -->
+        <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
+            <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl max-w-7xl w-full rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+                <div class="flex items-center gap-x-3 justify-between">
+                    <a class="w-[clamp(25px,6.9vw,41px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                        <img
+                            class="w-full"
+                            src="./assets/defender-logo.svg"
+                            alt="Logo DMC"
+                        />
+                    </a>
+                    <ul class="mr-auto flex items-center px-[clamp(12px,3.33vw,24px)] gap-x-[clamp(12px,3.33vw,48px)] max-lg:hidden">
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="p-4 rounded-2xl cursor-pointer bg-(--color-purple-full) flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50 max-lg:hidden">
+                        <div class="w-max-10 flex items-center justify-center">
+                            <img
+                                class="w-max-10 aspect-square"
+                                src="./assets/telegram.svg"
+                                alt="Logo Telegram"
+                            />
+                        </div>
+                        <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                    </button>
+                    <button type="button" class="cursor-pointer transition-opacity duration-300 hover:opacity-50 w-[clamp(18px,5vw,36px)] hidden max-lg:inline-block">
+                        <img
+                            class="w-full"
+                            src="./assets/menu.svg"
+                            alt="Menu DMC"
+                        />
+                    </button>
+                </div>
+                <!-- Панель шапки при нажатии на меню -->
+                <!-- <div class="hidden flex-col items-center justify-center gap-y-11 h-[90vh] min-h-[530px] max-lg:flex">
+                    <ul class="flex flex-col items-center px-3 gap-y-8">
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="p-4 rounded-2xl cursor-pointer bg-(--color-purple-full) flex items-center gap-x-3 transition-opacity duration-300 hover:opacity-50">
+                        <div class="w-max-10 flex items-center justify-center">
+                            <img
+                                class="w-max-10 aspect-square"
+                                src="./assets/telegram.svg"
+                                alt="Logo Telegram"
+                            />
+                        </div>
+                        <span class="text-[clamp(14px,3.9vw,18px)]">Log in with Telegram</span>
+                    </button>
+                </div> -->
+            </div>
+        </header>
+        <!-- Основная часть сайта -->
+        <main class="flex flex-col overflow-hidden gap-y-[clamp(150px,41.6vw,256px)] py-[clamp(106px,37.22vw,232px)]">
+            <!-- Секция с фоном -->
+            <section class="px-[clamp(20px,5.55vw,100px)]">
+                <div class="relative z-0 mx-auto max-w-7xl w-full bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) overflow-hidden max-md:h-[calc(100% + 100px)] flex min-h-60">
+                    <img
+                        class="absolute top-0 left-1/2 object-center object-cover -translate-x-1/2 max-md:scale-150"
+                        src="./assets/hero-bg.png"
+                        alt="Image Heros"
+                    />
+                    <img
+                        class="mt-auto mx-auto w-[90%] object-center object-cover translate-y-[7.5%] max-md:scale-125 max-sm:scale-150"
+                        src="./assets/hero.png"
+                        alt="Image Heros"
+                    />
+                </div>
+            </section>
+            <!-- Секция с пополнением -->
+            <section class="px-[clamp(20px,5.55vw,100px)]">
+                <div class="mx-auto max-w-7xl w-full">
+                    <form class="grid grid-cols-[0.6fr_0.4fr] gap-[clamp(12px,3vw,20px)] max-xl:grid-cols-1 relative z-1">
+                        <div class="w-full bg-(--color-white-one-one) backdrop-blur-xs px-[clamp(24px,6.6vw,40px)] py-[clamp(24px,6.6vw,52px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) flex flex-col gap-y-[clamp(28px,7.7vw,32px)]">
+                            <div class="flex flex-col gap-y-[clamp(16px,4.4vw,32px)]">
+                                <h3 class="font-medium text-[clamp(20px,5.5vw,32px)]">Steam пополнение</h3>
+                                <p class="text-(--color-white-seven) text-[clamp(12px,3vw,18px)]">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, стройте уникальные конструкции и играйте с друзьями на разных платформах. Присоединяйтесь к миллионам игроков и создайте свои собственные приключения!</p>
+                            </div>
+                            <div class="mt-auto grid grid-cols-2 gap-[clamp(24px,6.6vw,32px)] max-md:grid-cols-1">
+                                <fieldset class="flex flex-col gap-y-[clamp(12px,3vw,14px)]">
+                                    <label for="name" class="flex items-center gap-2">
+                                        <span class="text-[clamp(12px,3vw,16px)]">Где искать</span>
+                                        <div class="relative group">
+                                            <img
+                                                class="w-3.5 aspect-square object-cover object-center cursor-pointer"
+                                                src="./assets/answer.svg"
+                                                alt="Image Popup"
+                                            />
+                                            <div class="hidden group-hover:flex absolute top-1/2 left-1/2 -translate-x-1/2 w-[clamp(360px,32vw,738px)] bg-(--color-input-eight) backdrop-blur-3xl p-[clamp(24px,6.6vw,32px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) flex-col gap-y-[clamp(28px,7.7vw,32px)] max-sm:-translate-x-1/3">
+                                                <h3 class="font-medium text-[clamp(20px,5.5vw,32px)]">Как найти свой логин в Steam?</h3>
+                                                <ul class="flex flex-col gap-y-4">
+                                                    <li class="text-[clamp(12px,3vw,18px)]">• Откройте клиент Steam. Нажмите на имя пользователя в правом верхнем углу главной страницы.</li>
+                                                    <li class="text-[clamp(12px,3vw,18px)]">• В выпадающем меню выберите пункт «Об аккаунте».</li>
+                                                </ul>
+                                                <img
+                                                    class="object-cover object-center w-full aspect-337/88 rounded-3xl"
+                                                    src="./assets/banner-steam.png"
+                                                    alt="Image Banner"
+                                                />
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        autocomplete="name"
+                                        placeholder="Логин Steam"
+                                        class="border border-(--color-white-one) bg-(--color-input-four) p-[clamp(12px,3vw,20px)] rounded-[clamp(12px,3vw,20px)] outline-0"
+                                    />
+                                </fieldset>
+                                <fieldset class="flex flex-col gap-y-[clamp(12px,3vw,14px)]">
+                                    <label for="email" class="text-[clamp(12px,3vw,16px)]">Email для чека</label>
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="Email"
+                                        autocomplete="email"
+                                        class="border border-(--color-white-one) bg-(--color-input-four) p-[clamp(12px,3vw,20px)] rounded-[clamp(12px,3vw,20px)] outline-0"
+                                    />
+                                </fieldset>
+                                <fieldset class="flex flex-col gap-y-[clamp(12px,3vw,14px)]">
+                                    <label for="sum" class="text-[clamp(12px,3vw,16px)]">Сумма пополнения, в рублях</label>
+                                    <input
+                                        min="0"
+                                        id="sum"
+                                        type="number"
+                                        autocomplete="off"
+                                        placeholder="Сумма пополнения"
+                                        class="border border-(--color-white-one) bg-(--color-input-four) p-[clamp(12px,3vw,20px)] rounded-[clamp(12px,3vw,20px)] outline-0"
+                                    />
+                                </fieldset>
+                                <fieldset class="flex flex-col gap-y-[clamp(12px,3vw,14px)]">
+                                    <label for="price" class="text-[clamp(12px,3vw,16px)]">К зачислению на Steam</label>
+                                    <input
+                                        min="0"
+                                        id="price"
+                                        type="number"
+                                        autocomplete="off"
+                                        placeholder="~ 0.00 ₽"
+                                        class="border border-(--color-white-one) bg-(--color-input-four) p-[clamp(12px,3vw,20px)] rounded-[clamp(12px,3vw,20px)] outline-0"
+                                    />
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="w-full bg-(--color-white-one-one) backdrop-blur-xs px-[clamp(24px,6.6vw,40px)] py-[clamp(24px,6.6vw,52px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) flex flex-col gap-y-[clamp(28px,7.7vw,32px)] -z-1">
+                            <div class="flex flex-col gap-y-[clamp(16px,4.4vw,32px)]">
+                                <h3 class="font-medium text-[clamp(20px,5.5vw,32px)] max-xl:hidden">Оплата</h3>
+                                <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                    <div class="flex justify-between gap-x-5">
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">Сумма пополнения</span>
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">350 ₽</span>
+                                    </div>
+                                    <div class="h-1 w-full bg-(--color-border-two)"></div>
+                                    <div class="flex justify-between gap-x-5">
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">Комиссия сервиса</span>
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">50 ₽</span>
+                                    </div>
+                                    <div class="h-1 w-full bg-(--color-border-two)"></div>
+                                    <div class="flex justify-between gap-x-5">
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">Итого</span>
+                                        <span class="text-(--color-white-seven) text-[clamp(12px,3vw,20px)]">400 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input
+                                id="promo"
+                                type="text"
+                                autocomplete="off"
+                                placeholder="Промокод"
+                                class="border border-(--color-white-one) bg-(--color-input-four) p-[clamp(12px,3vw,20px)] rounded-[clamp(12px,3vw,20px)] outline-0 max-xl:-order-1"
+                            />
+                            <div class="mt-auto flex flex-col gap-y-[clamp(14px,3.5vw,28px)]">
+                                <div class="flex items-center gap-x-3.5">
+                                    <input
+                                        id="checkbox"
+                                        type="checkbox"
+                                        name="is-check"
+                                        class="appearance-none text-(--color-purple-full) border border-(--color-purple-full) rounded-lg w-5 aspect-square flex items-center justify-center checked:before:absolute checked:before:content-['✔'] transition-opacity duration-300 hover:opacity-50 cursor-pointer"
+                                    />
+                                    <p class="text-[clamp(12px,3vw,18px)]">
+                                        <label for="checkbox" class="transition-opacity duration-300 hover:opacity-50 cursor-pointer">Я согласен с условиями</label>
+                                        <a href="/" class="text-(--color-purple-full) underline transition-opacity duration-300 hover:opacity-50 cursor-pointer">оферты</a>
+                                    </p>
+                                </div>
+                                <button type="submit" class="py-4 px-8 w-full rounded-[clamp(14px,3.5vw,17px)] cursor-pointer bg-(--color-yellow-full) flex justify-center transition-opacity duration-300 hover:opacity-50">
+                                    <span class="text-[clamp(14px,3.3vw,18px)] text-(--color-black-full) font-medium">Оплатить</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- Секция с популярными позициями -->
+            <section class="flex flex-col gap-y-[clamp(40px,11.1vw,52px)]">
+                <div class="px-[clamp(24px,6.6vw,40px)]">
+                    <div class="mx-auto flex flex-col w-full max-w-7xl gap-y-[clamp(16px,4.4vw,32px)] items-center">
+                        <h3 class="font-medium text-center text-[clamp(20px,5.5vw,32px)]">Популярные позиции</h3>
+                        <p class="text-(--color-white-seven) text-center text-[clamp(12px,3vw,18px)] max-w-[915px]">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, стройте уникальные конструкции и играйте с друзьями на разных платформах. Присоединяйтесь к миллионам игроков и создайте свои собственные приключения!</p>
+                        <img
+                            class="hidden max-sm:block"
+                            src="./assets/arrows.svg"
+                            alt="Image Arrow"
+                        />
+                    </div>
+                </div>
+                <ul class="mx-auto flex gap-x-[clamp(14px,3.8vw,28px)]">
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                    <li class="w-[clamp(150px,41.6vw,385px)] bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(12px,3vw,32px)] p-[clamp(4px,1.4vw,8px)] border border-(--color-card-full)">
+                        <div class="bg-(--color-white-one-one) backdrop-blur-xs rounded-[inherit] border border-(--color-card-full) p-[clamp(8px,2.2vw,20px)] shrink-0 flex items-center justify-center relative">
+                            <img
+                                class="absolute -z-1 w-full aspect-square object-center object-cover pointer-events-none"
+                                src="./assets/card-bg.png"
+                                alt="Image card background"
+                            />
+                            <img
+                                class="w-full aspect-square object-cover object-center rounded-[inherit]"
+                                src="./assets/box.png"
+                                alt="Image product"
+                            />
+                        </div>
+                        <div class="py-[clamp(8px,2.2vw,20px)] flex flex-col gap-y-[clamp(4px,1.4vw,8px)]">
+                            <h4 class="text-[clamp(8px,2.22vw,18px)] font-normal tracking-tighter">Ключ Minecraft Java & Bedrock</h4>
+                            <span class="text-(--color-price-full) text-[clamp(8px,2.22vw,20px)] font-medium">2489 ₽</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Секция с каталогом товаров -->
+            <section class="px-[clamp(24px,6.6vw,40px)]">
+                <div class="mx-auto w-full max-w-5xl flex flex-col gap-y-[clamp(36px,10vw,60px)] items-center">
+                    <div class="flex flex-col gap-y-[clamp(16px,4.4vw,32px)] items-center">
+                        <h3 class="font-medium text-center text-[clamp(20px,5.5vw,32px)]">Каталог товаров</h3>
+                        <p class="text-(--color-white-seven) text-center text-[clamp(12px,3vw,18px)] max-w-[915px]">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, стройте уникальные конструкции и играйте с друзьями на разных платформах. Присоединяйтесь к миллионам игроков и создайте свои собственные приключения!</p>
+                    </div>
+                    <ul class="flex items-center justify-center flex-wrap gap-y-[clamp(20px,5.5vw,40px)] gap-x-[clamp(14px,3.8vw,20px)]">
+                        <li class="flex flex-col items-center gap-y-[clamp(5px,1.4vw,14px)]">
+                            <img
+                                class="object-center object-cover aspect-square w-[clamp(70px,19.4vw,165px)] rounded-[clamp(12px,3vw,28px)]"
+                                src="./assets/minecraft.png"
+                                alt="Image Arrow"
+                            />
+                            <span class="text-center text-[clamp(8px,2.2vw,16px)]">MineCraft</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-y-[clamp(5px,1.4vw,14px)]">
+                            <img
+                                class="object-center object-cover aspect-square w-[clamp(70px,19.4vw,165px)] rounded-[clamp(12px,3vw,28px)]"
+                                src="./assets/minecraft.png"
+                                alt="Image Arrow"
+                            />
+                            <span class="text-center text-[clamp(8px,2.2vw,16px)]">MineCraft</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-y-[clamp(5px,1.4vw,14px)]">
+                            <img
+                                class="object-center object-cover aspect-square w-[clamp(70px,19.4vw,165px)] rounded-[clamp(12px,3vw,28px)]"
+                                src="./assets/minecraft.png"
+                                alt="Image Arrow"
+                            />
+                            <span class="text-center text-[clamp(8px,2.2vw,16px)]">MineCraft</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-y-[clamp(5px,1.4vw,14px)]">
+                            <img
+                                class="object-center object-cover aspect-square w-[clamp(70px,19.4vw,165px)] rounded-[clamp(12px,3vw,28px)]"
+                                src="./assets/minecraft.png"
+                                alt="Image Arrow"
+                            />
+                            <span class="text-center text-[clamp(8px,2.2vw,16px)]">MineCraft</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-y-[clamp(5px,1.4vw,14px)]">
+                            <img
+                                class="object-center object-cover aspect-square w-[clamp(70px,19.4vw,165px)] rounded-[clamp(12px,3vw,28px)]"
+                                src="./assets/minecraft.png"
+                                alt="Image Arrow"
+                            />
+                            <span class="text-center text-[clamp(8px,2.2vw,16px)]">MineCraft</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Секция с отзывами -->
+            <section class="flex flex-col items-center gap-y-[clamp(32px,8.8vw,52px)] relative z-0">
+                <div class="flex flex-col items-center gap-y-[clamp(12px,3vw,32px)] px-[clamp(20px,5.55vw,100px)]">
+                    <h2 class="max-w-287 text-center font-medium text-[clamp(20px,5.5vw,58px)] text-balance">Отзывы наших клиентов</h2>
+                    <p class="max-w-130 text-center text-[clamp(12px,3vw,20px)] text-(--color-grey-full)">Мы собрали для вас самые популярные позиции на основе количества покупок среди покупателей</p>
+                    <img
+                        class="hidden max-sm:block"
+                        src="./assets/arrows.svg"
+                        alt="Image Arrow"
+                    />
+                </div>
+                <div class="relative flex flex-col gap-y-9">
+                    <ul class="relative flex justify-center gap-x-[clamp(14px,3.8vw,20px)] w-full max-w-screen max-xl:hidden">
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                    </ul>
+                    <ul class="relative flex justify-center gap-x-[clamp(14px,3.8vw,20px)] w-full max-w-screen">
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                        <li class="flex flex-col gap-y-[clamp(20px,5.5vw,24px)] rounded-[clamp(20px,4.4vw,32px)] border border-(--color-footer-full) bg-(--color-footer-four) p-[clamp(20px,5.5vw,36px)] w-[clamp(283px,78.6vw,414px)] shrink-0 backdrop-blur-xl">
+                            <div class="flex flex-col gap-y-[clamp(12px,3vw,16px)]">
+                                <div class="flex items-center justify-between gap-x-8">
+                                    <div class="flex items-center justify-between gap-x-[clamp(14px,3.8vw,20px)]">
+                                        <img
+                                            class="aspect-square object-cover object-center rounded-[clamp(11px,3vw,16px)] w-[clamp(36px,10vw,52px)]"
+                                            src="./assets/review.png"
+                                            alt="Image Avatar"
+                                        />
+                                        <span class="text-[clamp(16px,4.4vw,24px)]">Данил</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star.svg"
+                                            alt="Image Star"
+                                        />
+                                        <img
+                                            class="aspect-square w-[clamp(16px,4.4vw,25px)] pointer-events-none"
+                                            src="./assets/star-purple.svg"
+                                            alt="Image Star"
+                                        />
+                                    </div>
+                                </div>
+                                <h4 class="font-medium text-(--color-gains-full) text-[clamp(12px,3vw,18px)]">Подписка 7tv.app</h4>
+                                <p class="text-[clamp(12px,3vw,18px)]">Очень понравилось, что в подписке открывается практически полный функционал, пользоваться стало комфортно. Но всё же цена могла бы быть чуть более доступной</p>
+                            </div>
+                            <span class="mt-auto text-[clamp(12px,3vw,14px)] text-(--color-white-four)">18 декабря</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- Конечный контент сайта -->
+        <footer class="mt-auto px-[clamp(20px,5.55vw,100px)] pb-[clamp(30px,8.3vw,160px)]">
+            <div class="mx-auto flex flex-col px-[clamp(20px,5.55vw,100px)] py-[clamp(38px,10.5vw,70px)] backdrop-blur-3xl bg-(--color-footer-two) border-t border-(--color-footer-two) max-w-(--size-11xl) rounded-[clamp(24px,6.6vw,32px)]">
+                <div class="flex flex-col gap-y-[clamp(32px,8.9vw,44px)] mx-auto max-w-7xl w-full">
+                    <div class="flex justify-between items-center gap-11 max-lg:flex-col max-sm:items-start">
+                        <a class="block w-[clamp(25px,6.9vw,41px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
+                            <img
+                                class="w-full"
+                                src="./assets/defender-logo.svg"
+                                alt="Logo DMC"
+                            />
+                        </a>
+                        <ul class="flex items-center gap-[clamp(24px,6.7vw,52px)] max-lg:flex-wrap max-lg:justify-center max-sm:flex-col max-sm:items-start">
+                            <li>
+                                <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Steam пополнение</a>
+                            </li>
+                            <li>
+                                <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Каталог</a>
+                            </li>
+                            <li>
+                                <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="text-[clamp(14px,3.9vw,18px)] text-center transition-opacity duration-300 hover:opacity-50" href="/">Публичная оферта</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-(--color-white-two) w-full h-px"></div>
+                    <p class="text-(--color-white-five) text-[clamp(12px,3.33vw,16px)]">© 2023 — 2025 DMC Store. Все права защищены. Любое копирование материалов сайта запрещено. Все упомянутые названия игр, продуктов, компаний, торговых марок, логотипы и другие элементы принадлежат их законным владельцам.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
