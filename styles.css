@@ -14,6 +14,7 @@ html { scroll-behavior: smooth }
     --color-white-full: rgba(var(--color-white), 1);
     --color-white-one: rgba(var(--color-white), 0.1);
     --color-white-one-one: rgba(var(--color-white), 0.01);
+    --color-white-one-five: rgba(var(--color-white), 0.05);
     --color-white-one-eight: rgba(var(--color-white), 0.08);
     --color-white-two: rgba(var(--color-white), 0.2);
     --color-white-four: rgba(var(--color-white), 0.4);
