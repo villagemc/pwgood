@@ -9,7 +9,17 @@
 </head>
 <body class="font-[Golos_Text] relative bg-(--color-main-full) text-(--color-white-full)">
     <div class="relative overflow-hidden flex flex-col z-0 min-h-dvh">
-    <!-- Фиксированная шапка странички -->
+        <img
+            class="absolute pointer-events-none bottom-0 right-0 translate-1/2 max-md:right-full max-md:translate-1/2"
+            src="./assets/soon-custom.svg"
+            alt="Soon Image"
+        />
+        <img
+            class="absolute pointer-events-none -bottom-[7%] right-full translate-1/2 grayscale-100 opacity-35 max-md:hidden"
+            src="./assets/soon-grey.svg"
+            alt="Animate Image"
+        />
+        <!-- Фиксированная шапка странички -->
         <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
             <div class="p-3 bg-(--color-logo-seven) rounded-3xl max-lg:hidden border border-(--color-white-one-eight)">
                 <a class="block w-[clamp(32px,8.8vw,60px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
@@ -20,7 +30,7 @@
                     />
                 </a>
             </div>
-            <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+            <div class="bg-(--color-header-eight) px-4.5 py-3 backdrop-blur-2xl rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
                 <div class="flex items-center gap-x-3 max-lg:justify-between">
                     <a class="hidden max-lg:block w-[clamp(32px,8.8vw,60px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
                         <img
@@ -87,7 +97,17 @@
                 </div> -->
             </div>
         </header>
-        <div class="h-[clamp(700px,65vw,1100px)] flex justify-center items-center px-[clamp(24px,6.6vw,40px)]">
+        <div class="h-[clamp(700px,65vw,1100px)] flex justify-center items-center px-[clamp(24px,6.6vw,40px)] relative">
+            <img
+                class="absolute pointer-events-none custom-anime-spin"
+                src="./assets/yellow-demo.png"
+                alt="Animate Image"
+            />
+            <img
+                class="absolute pointer-events-none"
+                src="./assets/soon-custom.svg"
+                alt="Soon Image"
+            />
             <h1 class="font-semibold text-(--color-white-five) text-center text-[clamp(57px,15.8vw,128px)] uppercase break-all leading-[90%] backdrop-blur-xs mix-blend-color-dodge">PWGood.Store</h1>
         </div>
         <!-- Основная часть сайта -->
@@ -95,7 +115,12 @@
             <!-- Секция с карточками -->
             <section class="flex flex-col gap-y-[clamp(40px,11.1vw,52px)]">
                 <div class="px-[clamp(24px,6.6vw,40px)]">
-                    <div class="mx-auto flex flex-col w-full max-w-7xl gap-y-[clamp(16px,4.4vw,32px)] items-center">
+                    <div class="mx-auto flex flex-col w-full max-w-7xl gap-y-[clamp(16px,4.4vw,32px)] items-center relative">
+                        <img
+                            class="absolute pointer-events-none top-0 right-0 -translate-y-[35%] grayscale-100 opacity-35 hidden max-md:block -z-1"
+                            src="./assets/soon-grey.svg"
+                            alt="Soon Image"
+                        />
                         <h3 class="font-medium text-center text-[clamp(20px,5.5vw,32px)]">Популярные позиции</h3>
                         <p class="text-(--color-white-seven) text-center text-[clamp(12px,3vw,18px)] max-w-[915px]">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, стройте уникальные конструкции и играйте с друзьями на разных платформах. Присоединяйтесь к миллионам игроков и создайте свои собственные приключения!</p>
                         <img
@@ -235,7 +260,26 @@
                 </ul>
             </section>
             <!-- Секция с пополнением -->
-            <section class="px-[clamp(20px,5.55vw,100px)]">
+            <section class="px-[clamp(20px,5.55vw,100px)] flex flex-col items-center gap-y-[clamp(32px,8.8vw,52px)] relative">
+                <img
+                    class="absolute pointer-events-none -top-1/2 -right-[10%] -z-1 w-200 max-2xl:top-[60%] max-2xl:-right-[50%]"
+                    src="./assets/right-group.png"
+                    alt="Animate Image"
+                />
+                <img
+                    class="absolute pointer-events-none -top-[70%] -left-[60%] max-xl:top-[85%]"
+                    src="./assets/left-group.png"
+                    alt="Animate Image"
+                />
+                <div class="flex flex-col items-center gap-y-[clamp(12px,3vw,32px)]">
+                    <h2 class="max-w-287 text-center font-medium text-[clamp(20px,5.5vw,58px)] text-balance">Steam пополнение</h2>
+                    <p class="max-w-130 text-center text-[clamp(12px,3vw,20px)] text-(--color-grey-full)">Мы собрали для вас самые популярные позиции на основе количества покупок среди покупателей</p>
+                    <img
+                        class="hidden max-sm:block"
+                        src="./assets/arrows.svg"
+                        alt="Image Arrow"
+                    />
+                </div>
                 <div class="mx-auto max-w-7xl w-full">
                     <form class="grid grid-cols-[0.6fr_0.4fr] gap-[clamp(12px,3vw,20px)] max-xl:grid-cols-1 relative z-1">
                         <div class="w-full bg-(--color-white-one-one) backdrop-blur-xs px-[clamp(24px,6.6vw,40px)] py-[clamp(24px,6.6vw,52px)] rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) flex flex-col gap-y-[clamp(28px,7.7vw,32px)]">
@@ -360,7 +404,12 @@
             <!-- Секция с каталогом товаров -->
             <section class="px-[clamp(24px,6.6vw,40px)]">
                 <div class="mx-auto w-full max-w-5xl flex flex-col gap-y-[clamp(36px,10vw,60px)] items-center">
-                    <div class="flex flex-col gap-y-[clamp(16px,4.4vw,32px)] items-center">
+                    <div class="flex flex-col gap-y-[clamp(16px,4.4vw,32px)] items-center relative">
+                        <img
+                            class="absolute pointer-events-none top-0 right-0 -translate-y-[35%] grayscale-100 opacity-35 -z-1 max-md:hidden"
+                            src="./assets/soon-grey.svg"
+                            alt="Soon Image"
+                        />
                         <h3 class="font-medium text-center text-[clamp(20px,5.5vw,32px)]">Каталог товаров</h3>
                         <p class="text-(--color-white-seven) text-center text-[clamp(12px,3vw,18px)] max-w-[915px]">Получите доступ к бесконечным возможностям с ключом для Minecraft Java и Bedrock. Исследуйте миры, стройте уникальные конструкции и играйте с друзьями на разных платформах. Присоединяйтесь к миллионам игроков и создайте свои собственные приключения!</p>
                     </div>

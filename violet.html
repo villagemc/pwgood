@@ -41,7 +41,7 @@
         />
         <!-- Фиксированная шапка странички -->
         <header class="fixed flex items-center justify-center gap-x-12 w-full top-[clamp(36px,10vw,48px)] left-0 px-[clamp(20px,5.55vw,100px)] z-10">
-            <div class="bg-(--color-header-eight) p-3 backdrop-blur-2xl max-w-7xl w-full rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
+            <div class="bg-(--color-header-eight) px-4.5 py-3 backdrop-blur-2xl max-w-7xl w-full rounded-[clamp(16px,4.44vw,24px)] border border-(--color-white-one) max-lg:w-full">
                 <div class="flex items-center gap-x-3 justify-between">
                     <a class="w-[clamp(25px,6.9vw,41px)] transition duration-300 hover:scale-110 hover:opacity-50" href="/">
                         <img
@@ -113,8 +113,9 @@
             <!-- Секция с фоном -->
             <section class="px-[clamp(20px,5.55vw,100px)]">
                 <div class="relative z-0 mx-auto max-w-7xl w-full bg-(--color-white-one-one) backdrop-blur-xs rounded-[clamp(16px,4.4vw,32px)] border border-(--color-card-full) overflow-hidden max-md:h-[calc(100% + 100px)] flex min-h-60">
+                    <p class="absolute bottom-0 left-0 font-medium text-[clamp(128px,35vw,394px)] leading-[70%] z-10 text-(--color-white-one-one)">shield.<br>market</p>
                     <img
-                        class="absolute top-0 left-1/2 object-center object-cover -translate-x-1/2 max-md:scale-150"
+                        class="custom-spin absolute -bottom-[30%] left-1/2 object-center object-cover -translate-x-1/2 max-md:scale-150"
                         src="./assets/hero-bg.png"
                         alt="Image Heros"
                     />
@@ -249,7 +250,8 @@
                 </div>
             </section>
             <!-- Секция с популярными позициями -->
-            <section class="flex flex-col gap-y-[clamp(40px,11.1vw,52px)]">
+            <section class="flex flex-col gap-y-[clamp(40px,11.1vw,52px)] relative">
+                <p class="absolute top-[60%] left-[10%] font-medium text-[clamp(128px,35vw,394px)] leading-[70%] -z-10 text-(--color-white-one-one)">shield.<br>market</p>
                 <div class="px-[clamp(24px,6.6vw,40px)]">
                     <div class="mx-auto flex flex-col w-full max-w-7xl gap-y-[clamp(16px,4.4vw,32px)] items-center">
                         <h3 class="font-medium text-center text-[clamp(20px,5.5vw,32px)]">Популярные позиции</h3>

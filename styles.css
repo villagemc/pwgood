@@ -113,3 +113,35 @@ html { scroll-behavior: smooth }
         rgba(113, 113, 122, 0.00) 100%
     ;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    60% {
+        transform: rotate(165deg);
+    }
+    85% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(165deg);
+    }
+}
+
+@keyframes anime-spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-spin {
+    animation: spin 5s ease-in-out forwards;
+}
+
+.custom-anime-spin {
+    animation: anime-spin 10s linear infinite;
+}
