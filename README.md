@@ -1,0 +1,9 @@
+- https://villagemc.github.io/pwgood/yellow.html
+- https://villagemc.github.io/pwgood/violet.html
+- https://villagemc.github.io/pwgood/market.html
+- https://villagemc.github.io/pwgood/main.html
+- https://villagemc.github.io/pwgood/rules.html
+- https://villagemc.github.io/pwgood/steam.html
+- https://villagemc.github.io/pwgood/reviews.html
+- https://villagemc.github.io/pwgood/chat.html
+- https://villagemc.github.io/pwgood/catalog.html
