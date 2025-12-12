@@ -1,4 +1,5 @@
-@import url('./font/stylesheet.css');
+@import url('./fonts/GolosText/stylesheet.css');
+@import url('./fonts/Unbounded/stylesheet.css');
 
 @import "tailwindcss";
 
